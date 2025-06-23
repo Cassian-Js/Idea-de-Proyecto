@@ -16,4 +16,4 @@ El objetivo de este proyecto es identificar y comparar genes homólogos que codi
 
 ## Sube una foto que represente tu organismo o grupo de organismos
 
-https://www.todouruguay.net/wp-content/uploads/2019/07/hongos_de_eucaliptus2.jpg 
+![](https://www.todouruguay.net/wp-content/uploads/2019/07/hongos_de_eucaliptus2.jpg) 
