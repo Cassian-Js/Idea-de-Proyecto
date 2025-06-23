@@ -1,4 +1,4 @@
-# Ideas de Proyecto Final d
+# Ideas de Proyecto Final 
 
 ## ¿En qué organismo o grupo de organismo vas a trabajar ?
 
