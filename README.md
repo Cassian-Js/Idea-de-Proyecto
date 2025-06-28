@@ -1,5 +1,5 @@
 # Proyecto Final 
-#Genes Ortólogos y Especificidad en Cordyceps
+# Genes Ortólogos y Especificidad en Cordyceps
 
 ## ¿Qué piensas hacer en tu proyecto?
 
