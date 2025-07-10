@@ -56,4 +56,6 @@ iqtree2 -s rpb2_aligned.fasta -m MFP -bb 1000 -nt AUTO
 
 Abre el archivo rpb2_aligned.fasta.treefile en FigTree para visualizar y analizar el árbol filogenético.
 
+---
 
+![](https://static.nationalgeographic.es/files/styles/image_3200/public/naturepl_01678604.jpg?w=1900&h=1267)
