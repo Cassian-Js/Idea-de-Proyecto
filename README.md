@@ -28,7 +28,6 @@ mkdir -p Proyecto.final/Resultados
 ## Descargar secuencias
 
 cd Proyecto.final/Secuencias/Ortologos
-
 datasets download gene symbol rpb2 --ortholog Ascomycota --filename rpb2_Asco.zip
 unzip rpb2_Asco.zip
 mv ncbi_dataset/data/rna.fna rpb2_ascomycota.fasta
