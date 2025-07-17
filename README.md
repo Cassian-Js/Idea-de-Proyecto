@@ -38,7 +38,6 @@ mkdir FELIDAE
 ## Descargar secuencias
 
 ```bash
-
 datasets download gene symbol FOXP2 --taxon Felidae --filename FOXP2_Felidae.zip
 datasets download gene symbol MC1R --taxon Felidae --filename MC1R_Felidae.zip
 datasets download gene symbol TAS2R38 --taxon Felidae --filename TAS2R38_Felidae.zip
@@ -48,25 +47,26 @@ unzip MC1R_Felidae.zip
 unzip TAS2R38_Felidae.zip
 
 - Generando archivos .fna dentro de cada carpeta descargada.
-
+```
 ## Alinear con muscle
 
+```bash
 ./muscle3.8.31_i86linux64 -in FOXP2_Felidae.fna -out FOXP2_aln.fasta
 ./muscle3.8.31_i86linux64 -in MC1R_Felidae.fna -out MC1R_aln.fasta
 ./muscle3.8.31_i86linux64 -in TAS2R38_Felidae.fna -out TAS2R38_aln.fasta
 
 - Generando archivos alineados en formato FASTA para cada gen.
-
+```
 ## Editar con ATOM
 
 
 
 ## Implementar IQTREE
 
-cd Proyecto.final/Alineamientos
-
+```bash
 module load iqtree/2.2.6
 
+```
 ---
 
 ## Visualizar el treefile en Figtree
