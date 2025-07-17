@@ -1,8 +1,16 @@
-# Análisis filogenético del gen RPB2 en especies del filum Ascomycota
+# Análisis filogenético de genes ortólogos en especies del grupo *Felidae*
 
-Este proyecto compara la variabilidad genética del gen **rpb2** entre especies del filum *Ascomycota*. 
-Las secuencias se descargan desde NCBI usando `datasets`, se alinean con `muscle`, y se analiza su relación evolutiva con `IQ-TREE2`.
-Finalmente, los árboles generados pueden visualizarse con `figtree`.
+Este proyecto tiene como objetivo analizar la relación evolutiva entre especies del grupo *Felidae* mediante el estudio de tres genes ortólogos: **FOXP2**, **MC1R** y **TAS2R38**. Estos genes fueron seleccionados por su relevancia en características fenotípicas clave como vocalización (FOXP2), pigmentación (MC1R) y percepción del gusto amargo (TAS2R38), respectivamente.
+
+Las secuencias se descargaron desde NCBI utilizando la herramienta `datasets`, se alinearon con `muscle` y se construyeron árboles filogenéticos con `IQ-TREE2`. Finalmente, los árboles generados se visualizaron en `FigTree`.
+
+Este estudio permite observar la divergencia genética entre especies de *Felidae* y evaluar la utilidad de estos genes ortólogos en estudios evolutivos comparativos.
+
+# Utilidad:
+- Explora la utilidad de genes funcionales específicos para reconstrucción filogenética.
+- Aporta evidencia sobre la divergencia genética en el grupo *Felidae*.
+- Contribuye a entender cómo se han conservado o diversificado genes con funciones biológicas claves.
+- Sirve como ejemplo práctico de cómo combinar herramientas bioinformáticas para análisis filogenético.
 
 ---
 
@@ -10,6 +18,7 @@ Finalmente, los árboles generados pueden visualizarse con `figtree`.
 
 - Acceso a una supercomputadora.
 - Terminal Git Bash.
+- ATOM
 - Programas requeridos:
   - [`datasets`](https://www.ncbi.nlm.nih.gov/datasets/)
   - [`muscle`](https://www.drive5.com/muscle/)
@@ -18,34 +27,43 @@ Finalmente, los árboles generados pueden visualizarse con `figtree`.
 
 ---
 
-## Crear carpetas necesarias
+## Crear carpeta de trabajo en la terminal y carpeta personal
 
+cd JuanAY
+mkdir FELIDAE
 
-mkdir -p Proyecto.final/Secuencias/Ortologos
-mkdir -p Proyecto.final/Alineamientos
-mkdir -p Proyecto.final/Resultados
+- Tiene que estar datasets en esta carpeta.
+- Tiene que estar muscle3.8.31
 
 ## Descargar secuencias
 
-cd Proyecto.final/Secuencias/Ortologos
-datasets download gene symbol rpb2 --ortholog Ascomycota --filename rpb2_Asco.zip
-unzip rpb2_Asco.zip
-mv ncbi_dataset/data/rna.fna rpb2_ascomycota.fasta
+datasets download gene symbol FOXP2 --taxon Felidae --filename FOXP2_Felidae.zip
+datasets download gene symbol MC1R --taxon Felidae --filename MC1R_Felidae.zip
+datasets download gene symbol TAS2R38 --taxon Felidae --filename TAS2R38_Felidae.zip
+
+unzip FOXP2_Felidae.zip
+unzip MC1R_Felidae.zip
+unzip TAS2R38_Felidae.zip
+
+- Generando archivos .fna dentro de cada carpeta descargada.
 
 ## Alinear con muscle
 
-cd ../../../
+./muscle3.8.31_i86linux64 -in FOXP2_Felidae.fna -out FOXP2_aln.fasta
+./muscle3.8.31_i86linux64 -in MC1R_Felidae.fna -out MC1R_aln.fasta
+./muscle3.8.31_i86linux64 -in TAS2R38_Felidae.fna -out TAS2R38_aln.fasta
 
-./muscle3.8.31_i86linux64 -in Proyecto.final/Secuencias/Ortologos/rpb2_ascomycota.fasta \
--out Proyecto.final/Alineamientos/rpb2_aligned.fasta \
--maxiters 1 -diags
+- Generando archivos alineados en formato FASTA para cada gen.
+
+## Editar con ATOM
+
+
 
 ## Implementar IQTREE
 
 cd Proyecto.final/Alineamientos
 
 module load iqtree/2.2.6
-iqtree2 -s rpb2_aligned.fasta -m MFP -bb 1000 -nt AUTO
 
 ---
 
@@ -57,4 +75,4 @@ Abre el archivo rpb2_aligned.fasta.treefile en FigTree para visualizar y analiza
 
 ---
 
-![](https://static.nationalgeographic.es/files/styles/image_3200/public/naturepl_01678604.jpg?w=1900&h=1267)
+![](https://www.google.com/url?sa=i&url=https%3A%2F%2Ffactzoo.com%2Fbook%2Fcats-felidae-ideal-predator-bodies%2F&psig=AOvVaw27bSTWrXBm6oBsIVHQnYD0&ust=1752798964492000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCOCfpJHTwo4DFQAAAAAdAAAAABAM)
