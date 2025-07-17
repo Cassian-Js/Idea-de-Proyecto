@@ -37,6 +37,8 @@ mkdir FELIDAE
 
 ## Descargar secuencias
 
+```bash
+
 datasets download gene symbol FOXP2 --taxon Felidae --filename FOXP2_Felidae.zip
 datasets download gene symbol MC1R --taxon Felidae --filename MC1R_Felidae.zip
 datasets download gene symbol TAS2R38 --taxon Felidae --filename TAS2R38_Felidae.zip
