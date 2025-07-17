@@ -77,4 +77,5 @@ Abre el archivo rpb2_aligned.fasta.treefile en FigTree para visualizar y analiza
 
 ---
 
-![Felidae - Leptailurus serval](https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AFelidae_-_Leptailurus_serval_%2528Serval%2529_%25288300229302%2529.jpg&psig=AOvVaw2bcjSqZyhEB5OlZ_v4cL3c&ust=1752800012610000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCMjxtYXXwo4DFQAAAAAdAAAAABAE)
+![Felidae - Leptailurus serval](https://upload.wikimedia.org/wikipedia/commons/e/e5/Serval_%28Leptailurus_serval%29_%2814034520905%29.jpg)
+![Felidae - Leptailurus serval](https://upload.wikimedia.org/wikipedia/commons/2/2a/Serval.jpg)
