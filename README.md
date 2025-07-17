@@ -65,7 +65,7 @@ unzip TAS2R38_Felidae.zip
 
 ```bash
 module load iqtree/2.2.6
-
+iqtree2 -s
 ```
 ---
 
@@ -73,9 +73,8 @@ module load iqtree/2.2.6
 
 - Si el archivo se encuentra en la supercomputador utilizar el comando: scp
 
-Abre el archivo rpb2_aligned.fasta.treefile en FigTree para visualizar y analizar el árbol filogenético.
+Abre el archivo en FigTree para visualizar y analizar el árbol filogenético.
 
 ---
 
-![Felidae - Leptailurus serval](https://upload.wikimedia.org/wikipedia/commons/e/e5/Serval_%28Leptailurus_serval%29_%2814034520905%29.jpg)
 ![Felidae - Leptailurus serval](https://upload.wikimedia.org/wikipedia/commons/2/2a/Serval.jpg)
