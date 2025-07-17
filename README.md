@@ -77,4 +77,4 @@ Abre el archivo rpb2_aligned.fasta.treefile en FigTree para visualizar y analiza
 
 ---
 
-![](https://www.google.com/url?sa=i&url=https%3A%2F%2Ffactzoo.com%2Fbook%2Fcats-felidae-ideal-predator-bodies%2F&psig=AOvVaw27bSTWrXBm6oBsIVHQnYD0&ust=1752798964492000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCOCfpJHTwo4DFQAAAAAdAAAAABAM)
+![](https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AFelidae_-_Leptailurus_serval_%2528Serval%2529_%25288300229302%2529.jpg&psig=AOvVaw2bcjSqZyhEB5OlZ_v4cL3c&ust=1752800012610000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCMjxtYXXwo4DFQAAAAAdAAAAABAE)
